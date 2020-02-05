@@ -1,19 +1,174 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- MDB icon -->
+  <link rel="icon" href="node_modules/mdbootstrap/img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
 
-  <title>My Resume</title>
+    
+  </head>
+  <body>
+        <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center">
+              <h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body mx-3">
+              <div class="md-form mb-5">
+                <i class="fas fa-user prefix grey-text"></i>
+                <input type="text" id="form34" class="form-control validate">
+                <label data-error="wrong" data-success="right" for="form34">Your name</label>
+              </div>
+      
+              <div class="md-form mb-5">
+                <i class="fas fa-envelope prefix grey-text"></i>
+                <input type="email" id="form29" class="form-control validate">
+                <label data-error="wrong" data-success="right" for="form29">Your email</label>
+              </div>
+      
+              <div class="md-form mb-5">
+                <i class="fas fa-tag prefix grey-text"></i>
+                <input type="text" id="form32" class="form-control validate">
+                <label data-error="wrong" data-success="right" for="form32">Subject</label>
+              </div>
+      
+              <div class="md-form">
+                <i class="fas fa-pencil prefix grey-text"></i>
+                <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                <label data-error="wrong" data-success="right" for="form8">Your message</label>
+              </div>
+      
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button class="btn btn-unique">Send <i class="fas fa-paper-plane-o ml-1"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <header>
+      <nav>
+        <ul class="nav_links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="https://alexkel91.github.io">Portfolio</a></li>
+          <li><a data-toggle="modal" data-target="#modalContactForm" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <div>
+        <img src="images/headshot2.jpg" />
+      </div>
+      <h1>Alex Kellman- Web Development</h1>
+      <h2>Full Stack Web Dev</h2>
 
-  <link rel="stylesheet" href="css/index.css">
+      <p>
+        Occasionally I have time to work on side projects, if you're interested,
+        let me know by reaching out to me.
+      </p>
+      <div>
+            <div class="text-center">
+                    <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalContactForm">Launch
+                      Contact Form</a>
+                  </div>
+        
+       
+      </div>
+    </section>
+    <section class="skills-section">
+      <div class="text-container">
+        <h2>Why you should hire me:</h2>
+        <p>
+          I have outstanding knowledge of Java, HTML and CSS. I have a good
+          understanding of Operating Systmes. I have 5 years experience in
+          problem solving and researching.
+        </p>
+        <br />
+        <p>
+          I have excellent communication and interpersonal skills, which makes
+          me an awesome working with a team.
+        </p>
+      </div>
+      <div class="text-container">
+        <table>
+          <h2>Top Skills</h2>
+          <tr>
+            <td>HTML</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+          </tr>
+          <tr>
+            <td>Git</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section class="workhistory">
+      <div>
+        <h2>Work History</h2>
+        <table class="w3-table w3-striped">
+          <tr>
+            <th>Yrs</th>
+            <th>Company</th>
+            <th>Title</th>
+            <th>Tech Used</th>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Office Depot</td>
+            <td>Tech Sales</td>
+            <td>General</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>UCF Library</td>
+            <td>I.T. Student Aid</td>
+            <td>General</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Houghton Mifflin Harcourt</td>
+            <td>Technical Support</td>
+            <td>Web</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    
+    <footer>
+      &copy; Copyright 2019
+    </footer>
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-</head>
+<!-- jQuery -->
+<script type="text/javascript" src="node_modules/mdbootstrap/js/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="node_modules/mdbootstrap/js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="node_modules/mdbootstrap/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="node_modules/mdbootstrap/js/mdb.min.js"></script>
+  </body>
 
-<body>
-  <h1>My Resume</h1>
-</body>
-</html>
