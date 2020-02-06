@@ -124,7 +124,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* Set every element's box-sizing to border-box */
 .flex {
   display: flex;
 }
@@ -221,7 +220,7 @@ html .skills-section .text-container table {
 }
 html .skills-section .text-container h2 {
   font-size: 2rem;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
 html .skills-section .text-container p {
@@ -245,7 +244,7 @@ html .workhistory div {
 }
 html .workhistory h2 {
   font-size: 2rem;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   border-bottom: 1px solid lightgray;
 }
