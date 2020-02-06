@@ -125,6 +125,9 @@ table {
   border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
+.flex {
+  display: flex;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -133,71 +136,71 @@ table {
 html {
   height: 50%;
 }
-body {
+html body {
   height: 100%;
 }
-li a {
+html li a {
   font-weight: 500;
   font-size: 16px;
   text-decoration: none;
 }
-header {
+html header {
   display: flex;
   justify-content: flex-end;
   padding: 30px 10%;
 }
-.nav_links {
+html .nav_links {
   list-style: none;
   display: flex;
   justify-content: flex-end;
 }
-.nav_links li {
+html .nav_links li {
   display: inline-block;
   padding: 0px 20px;
 }
-.nav_links li a {
+html .nav_links li a {
   transition: all 0.3s ease 0s;
 }
-.nav_links li a:hover {
+html .nav_links li a:hover {
   color: #0088a9;
 }
-.hero {
+html .hero {
   display: block;
   margin: 2% 15%;
   width: 75%;
   background-color: #bbe951;
 }
-.hero h1 {
+html .hero h1 {
   font-size: 5rem;
   margin-left: 10%;
   font-weight: bold;
   padding: 1%;
 }
-.hero h2 {
+html .hero h2 {
   margin-left: 10%;
   font-weight: bold;
   padding: 1%;
   font-size: 2rem;
 }
-.hero div {
+html .hero div {
   display: flex;
   flex-direction: column;
   margin: 1%;
   padding: 2%;
   margin-left: 5%;
 }
-.hero p {
+html .hero p {
   font-size: 20px;
   width: 65%;
   margin-left: 10%;
 }
-.hero img {
+html .hero img {
   width: 20%;
   margin-left: 10%;
   margin-top: 5%;
   vertical-align: middle;
 }
-.skills-section {
+html .skills-section {
   width: 76%;
   margin: 0 15%;
   display: flex;
@@ -207,66 +210,66 @@ header {
   margin-bottom: 20px;
   border-bottom: 1px dashed black;
 }
-.skills-section .text-container {
+html .skills-section .text-container {
   width: 48%;
   padding: 0 1%;
   padding-bottom: 20px;
 }
-.skills-section .text-container table {
+html .skills-section .text-container table {
   border: #dcdcdc;
   width: 90%;
 }
-.skills-section .text-container h2 {
+html .skills-section .text-container h2 {
   font-size: 2rem;
   font-family: "Open Sans Condensed", sans-serif;
   font-weight: bold;
 }
-.skills-section .text-container p {
+html .skills-section .text-container p {
   font-weight: lighter;
 }
-.skills-section .text-container tr {
+html .skills-section .text-container tr {
   font-weight: lighter;
 }
-.skills-section .text-container td {
+html .skills-section .text-container td {
   border: solid #dcdcdc;
   height: 50px;
   padding: 15px;
   text-align: left;
 }
-.workhistory {
+html .workhistory {
   width: 76%;
   margin-left: 15%;
 }
-.workhistory div {
+html .workhistory div {
   padding: 2%;
 }
-.workhistory h2 {
+html .workhistory h2 {
   font-size: 2rem;
   font-family: "Open Sans Condensed", sans-serif;
   font-weight: bold;
   border-bottom: 1px solid lightgray;
 }
-.workhistory table {
+html .workhistory table {
   width: 100%;
 }
-.workhistory table th {
+html .workhistory table th {
   border-top: black;
   background-color: white;
   height: 50px;
   text-align: left;
   font-weight: bold;
 }
-.workhistory td:first-child {
+html .workhistory td:first-child {
   font-weight: bold;
 }
-footer {
+html footer {
   text-align: center;
   background-color: #bbe951;
   margin: 2% 15%;
   width: 75%;
   height: 5%;
 }
-.modal {
+html .modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -279,26 +282,26 @@ footer {
   background-color: rgba(0, 0, 0, 0.4);
 }
 @media (max-width: 500px) {
-  a {
+  html a {
     align-items: center;
   }
-  .hero h1 {
+  html .hero h1 {
     font-size: 20px;
     font-weight: bold;
   }
-  .hero h2 {
+  html .hero h2 {
     font-size: 20px;
     font-weight: bold;
   }
-  .hero p {
+  html .hero p {
     font-size: 20px;
   }
-  .skills-section {
-    background-color: #D3C7C4;
+  html .skills-section {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .skills-section .text-container {
+  html .skills-section .text-container {
     width: 100%;
     padding: 0;
   }

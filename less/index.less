@@ -50,7 +50,9 @@ table {
 
 /* Set every element's box-sizing to border-box */
 @color:#bbe951;
-
+.flex{
+	display:flex;
+}
 
 
 * {
@@ -61,7 +63,7 @@ table {
 html {
 	height: 50%;
 	
-}
+
 body {
 	height: 100%;
 }
@@ -73,14 +75,15 @@ li {
 	}
 }
 header {
-	display: flex;
+	.flex;
 	justify-content: flex-end;
 	
 	padding: 30px 10%;
 }
 .nav_links {
 	list-style: none;
-	display: flex;
+	
+	.flex;
 	justify-content: flex-end;
 	li {
 		display: inline-block;
@@ -111,7 +114,7 @@ header {
 		font-size: 2rem;
 	}
 	div {
-		display: flex;
+		.flex;
 		flex-direction: column;
 		margin: 1%;
 		padding: 2%;
@@ -134,7 +137,7 @@ header {
 .skills-section {
 	width: 76%;
 	margin: 0 15%;
-	display: flex;
+	.flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	font-weight: bold;
@@ -234,7 +237,8 @@ footer {
 		}
 	}
 	.skills-section {
-		background-color: #D3C7C4;
+		
+		.flex;
 		flex-direction: column;
 		align-items: center;
 		.text-container {
@@ -243,4 +247,5 @@ footer {
 			;
 		}
 	}
+}
 }
