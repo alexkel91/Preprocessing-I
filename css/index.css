@@ -1,1 +1,307 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.flex {
+  display: flex;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 50%;
+}
+html body {
+  height: 100%;
+}
+html li a {
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+}
+html header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px 10%;
+}
+html .nav_links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+html .nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+html .nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+html .nav_links li a:hover {
+  color: #0088a9;
+}
+html .hero {
+  display: block;
+  margin: 2% 15%;
+  width: 75%;
+  background-color: #bbe951;
+}
+html .hero h1 {
+  font-size: 5rem;
+  margin-left: 10%;
+  font-weight: bold;
+  padding: 1%;
+}
+html .hero h2 {
+  margin-left: 10%;
+  font-weight: bold;
+  padding: 1%;
+  font-size: 2rem;
+}
+html .hero div {
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+  padding: 2%;
+  margin-left: 5%;
+}
+html .hero p {
+  font-size: 20px;
+  width: 65%;
+  margin-left: 10%;
+}
+html .hero img {
+  width: 20%;
+  margin-left: 10%;
+  margin-top: 5%;
+  vertical-align: middle;
+}
+html .skills-section {
+  width: 76%;
+  margin: 0 15%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed black;
+}
+html .skills-section .text-container {
+  width: 48%;
+  padding: 0 1%;
+  padding-bottom: 20px;
+}
+html .skills-section .text-container table {
+  border: #dcdcdc;
+  width: 90%;
+}
+html .skills-section .text-container h2 {
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+html .skills-section .text-container p {
+  font-weight: lighter;
+}
+html .skills-section .text-container tr {
+  font-weight: lighter;
+}
+html .skills-section .text-container td {
+  border: solid #dcdcdc;
+  height: 50px;
+  padding: 15px;
+  text-align: left;
+}
+html .workhistory {
+  width: 76%;
+  margin-left: 15%;
+}
+html .workhistory div {
+  padding: 2%;
+}
+html .workhistory h2 {
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  border-bottom: 1px solid lightgray;
+}
+html .workhistory table {
+  width: 100%;
+}
+html .workhistory table th {
+  border-top: black;
+  background-color: white;
+  height: 50px;
+  text-align: left;
+  font-weight: bold;
+}
+html .workhistory td:first-child {
+  font-weight: bold;
+}
+html footer {
+  text-align: center;
+  background-color: #bbe951;
+  margin: 2% 15%;
+  width: 75%;
+  height: 5%;
+}
+html .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+@media (max-width: 500px) {
+  html a {
+    align-items: center;
+  }
+  html .hero h1 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  html .hero h2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  html .hero p {
+    font-size: 20px;
+  }
+  html .skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  html .skills-section .text-container {
+    width: 100%;
+    padding: 0;
+  }
+}
